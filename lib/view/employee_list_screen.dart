@@ -78,7 +78,7 @@ class _EmployeeListScreenState extends State<EmployeeListScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           _selectedIndex == null
-              ? _showAddEmployeeDialog
+              ? _showAddEmployeeDialog()
               : (_editEmployeeDialog(_employeeBox.getAt(_selectedIndex!)!));
         },
         child: _selectedIndex == null
